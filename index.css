@@ -1,1 +1,54 @@
+html {
+    background-color: black;
+}
+#container{
+    background-color: black;
+    padding-bottom: 40px;
+    margin: 0px;
+    height:100vh;
+} 
+#terminal {
+    height: 100%;
+}
+#content {
+    height: 0%;
+    width: 100vw;
+    padding-top: 30px;
+}
+#music-layout {
+    width: 100%;
+    overflow:auto;
+    padding-bottom: 20px;
+}
+#music-length-toggle > * {
+    margin-left: 20px;
+    background-color: transparent;
+    color: rgb(129, 129, 129);
+    font-weight: 600;
+    border: none;
+}
+#music-demo-btn {
+    color: white;
+}
+.music-item {
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 400px;
+    padding: 20px;
+}
 
+#audio-container {
+    background-color:rgb(95, 94, 94);
+    color: white;
+    padding: 20px;
+    border-radius:15px;
+    height: 300px;
+}
+#audio-title {
+    padding: 10px;
+}
+.audio-item {
+    font-size: 12px;
+    margin: 5px;
+    padding-left: 20px;
+}
