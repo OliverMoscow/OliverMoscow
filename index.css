@@ -26,6 +26,7 @@ html {
     color: rgb(129, 129, 129);
     font-weight: 600;
     border: none;
+    
 }
 #music-demo-btn {
     color: white;
@@ -36,19 +37,28 @@ html {
     min-height: 400px;
     padding: 20px;
 }
-
-#audio-container {
+#code-header {
+    padding-left: 20px;
+    margin: 5px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.portfolio-item {
     background-color:rgb(95, 94, 94);
     color: white;
     padding: 20px;
     border-radius:15px;
-    height: 300px;
+}
+.code-item {
+    min-height: 400px;
+    min-width: 600px;
+    margin: 20px;
 }
 #audio-title {
-    padding: 10px;
+    padding-top: 10px;
 }
 .audio-item {
-    font-size: 12px;
-    margin: 5px;
-    padding-left: 20px;
+    font-size: 11px;
+    margin: 2px;
+    padding-left: 10px;
 }
