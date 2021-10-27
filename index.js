@@ -141,7 +141,6 @@ In order to continue please type one of the following commands: \n
   - This website is NOT optomized for mobile devices.
   - Maximize window for optimal viewing.
   - If a command returns nothing press enter again.
-  - All commands besides [[;rgba(255,255,255,0.99);]START] are case sensitive.
   - Zoom in and out with (command +/-) or windows (control +/-)
   - All content displayed on this webpage is subject to copyright.
   - Type [[;rgba(255,255,255,0.99);]START] anytime to see these instructions again.\n\n`;
@@ -156,11 +155,12 @@ $("#terminal").terminal(
       this.echo(() => start);
       hideContent();
     },
-    Start: function () {
-      this.echo(() => start);
-      hideContent();
-    },
     MUSIC: function () {
+      this.echo(music.innerHTML);
+      hideContent();
+      renderSongs();
+    },
+    music: function () {
       this.echo(music.innerHTML);
       hideContent();
       renderSongs();
@@ -170,7 +170,16 @@ $("#terminal").terminal(
       hideContent();
       renderProjects();
     },
+    code: function () {
+      this.echo(coding.innerHTML);
+      hideContent();
+      renderProjects();
+    },
     CONTACT: function () {
+      this.echo("email: Omoscow15@gmail.com");
+      hideContent();
+    },
+    contact: function () {
       this.echo("email: Omoscow15@gmail.com");
       hideContent();
     },
