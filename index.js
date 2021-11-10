@@ -28,7 +28,7 @@ var songs = [
     ],
     description: `The unique part of this song is its long instrumental section which comes right after the first verse. 
     This was my first experience recording and producing a song and I learned a lot. 
-    This song has come a long way and has taken a lot of time and effort`,
+    This song has come a long way and has taken a lot of time and effort.`,
     src: "audio/Watching Jupiter.mp3",
   },
   {
