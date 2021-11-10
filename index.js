@@ -1,20 +1,19 @@
 var songs = [
   {
-    title: "In My Thoughts",
+    title: "In My Thoughts (DEMO)",
     artist: "Oliver Moscow",
     credits: [
       { role: "Vocals", name: "Oliver Moscow" },
       { role: "Strings", name: "Oliver Moscow (midi)" },
       { role: "Piano", name: "Oliver Moscow" },
       { role: "Bass", name: "Oliver Moscow" },
-      { role: "Producer", name: "Victor Kasian" },
+      { role: "Producer", name: "Oliver Moscow" },
     ],
     description: `I wrote this song on the piano and it took a long time. In total, the song features 5 key changes. 
     It is the most technical song I've written but is also easy to listen to. My favorite part is the tempo change at the end. 
     I am currently working with a professional producer to get the song finished and ready to be distributed.`,
     genres: "R&B, Pop, Orchestral",
-    full: "audio/In My Thoughts.mp3",
-    abbreviated: "audio/In My Thoughts(short).mp3",
+    src: "audio/In My Thoughts.mp3",
   },
   {
     title: "Watching Jupiter",
@@ -24,13 +23,13 @@ var songs = [
       { role: "Rythm Guitar", name: "Oliver Moscow" },
       { role: "Bass", name: "Dan Zahal" },
       { role: "Drums", name: "Will Stutman" },
-      { role: "Producer", name: "Victor Kasian" },
+      { role: "Producer", name: "Oliver Moscow" },
+      { role: "Mixing & Mastering Engineer", name: "Victor Kasian"}
     ],
     description: `The unique part of this song is its long instrumental section which comes right after the first verse. 
     This was my first experience recording and producing a song and I learned a lot. 
     This song has come a long way and has taken a lot of time and effort`,
-    full: "audio/Watching Jupiter.mp3",
-    abbreviated: "audio/Watching Jupiter(short).mp3",
+    src: "audio/Watching Jupiter.mp3",
   },
   {
     title: "Dont Just Stand There",
@@ -41,13 +40,13 @@ var songs = [
       { role: "Lead Guitar", name: "Caleb Batchelor" },
       { role: "Bass", name: "Jonah Batchelor" },
       { role: "Drums", name: "Ethan Ginsberg" },
-      { role: "Producer", name: "Victor Kasian" },
+      { role: "Producer", name: "Oliver Moscow" },
+      { role: "Mixing & Mastering Engineer", name: "Victor Kasian"}
     ],
     description: `This was my first real punk song. It is super fun to play. My favorite part is the intro. The lyrics are 
     quite different than the rest of my music.`,
     genres: "Rock, Punk",
-    full: "audio/Dont Just Stand There.mp3",
-    abbreviated: "audio/Dont Just Stand There(short).mp3",
+    src: "audio/DJST.mp3",
   },
 ];
 
@@ -114,7 +113,6 @@ var caberet = {
   showcases my range as a writer. This performance was a great experience because it showed me that everything 
   that can go wrong will: my distortion pedal didn't work, I didn't like the sound of the amp, and my guitar was out of tune. 
   However, I kept my composure and I'm proud of the work I've done.`,
-  
 };
 
 var audioSource = document.getElementById("audio-template").innerHTML,
@@ -130,8 +128,6 @@ var codeSource = document.getElementById("code-template").innerHTML,
   codeTemplate = Handlebars.compile(codeSource);
 
 var content = document.getElementById("content");
-
-var demo = true;
 
 var start = `\nHello there, \n\nMy name is Oliver Moscow. Welcome to my personal portfolio. Please enjoy :) \n\n
 In order to continue please type one of the following commands: \n
@@ -197,27 +193,16 @@ $("#terminal").terminal(
   },
   function start() {}
 );
-function toggleDemo() {
-  if (demo) {
-    $("#music-demo-btn").css("color", "rgb(129, 129, 129)");
-    $("#music-full-btn").css("color", "rgb(255, 255, 255)");
-  } else {
-    $("#music-full-btn").css("color", "rgb(129, 129, 129)");
-    $("#music-demo-btn").css("color", "rgb(255, 255, 255)");
-  }
-  demo = !demo;
-}
 
 function renderSongs() {
   var musicItems = songs.map((x) => {
-    x["src"] = demo ? x.full : x.abbreviated;
     return audioTemplate(x);
   });
+
   content.innerHTML = musicTemplate({ content: musicItems, caberet: caberet });
   $("#terminal").height("80%");
   $("#music-demo-btn").click(() => renderSongs());
   $("#music-full-btn").click(() => renderSongs());
-  toggleDemo();
 }
 
 function renderProjects() {
