@@ -1,6 +1,6 @@
 var songs = [
   {
-    title: "In My Thoughts (DEMO)",
+    title: "In My Thoughts (demo)",
     artist: "Oliver Moscow",
     credits: [
       { role: "Vocals", name: "Oliver Moscow" },
