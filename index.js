@@ -168,11 +168,11 @@ $("#terminal").terminal({
             renderProjects();
         },
         CONTACT: function() {
-            this.echo("email: Omoscow15@gmail.com");
+            this.echo("email: Omoscow15@gmail.com \n github: github.com/OliverMoscow");
             hideContent();
         },
         contact: function() {
-            this.echo("email: Omoscow15@gmail.com");
+            this.echo("email: Omoscow15@gmail.com \n github: github.com/OliverMoscow");
             hideContent();
         },
     }, {
