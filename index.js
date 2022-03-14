@@ -50,6 +50,21 @@ var songs = [{
 ];
 
 var apps = [{
+        title: "Listnr",
+        created: "2018",
+        src: "videos/Listnr Demo.mp4",
+        description: `An app that allows teenagers to share stories. 
+This was the first app I built and it went through many stages of development. I handled all of the UI, audio playback, and audio recording. 
+This app taught me a lot about data structures and front-end design. I built it in Xcode with the Firebase Database.`,
+    },
+    {
+        title: "FEITH APP",
+        created: "2020",
+        src: "videos/FEITH APP.mp4",
+        description: `I built this app working for FEITH SYSTEMS AND SERVICES. It allows users to easily acces their documents on mobile. 
+In the proccess of building this app I learned about HTTP and how to use APIs.`,
+    },
+    {
         title: "FEITH CATEGORIZER",
         created: "2020",
         src: "videos/FEITH CATEGORIZER.mov",
@@ -58,13 +73,7 @@ var apps = [{
     The web app automatically recommends a category based on similar categorized documents. You can see TF - IDF 
     working in the text tab of the document viewer. The highlighted words are words that the program found significant.`,
     },
-    {
-        title: "FEITH APP",
-        created: "2020",
-        src: "videos/FEITH APP.mp4",
-        description: `I built this app working for FEITH SYSTEMS AND SERVICES. It allows users to easily acces their documents on mobile. 
-    In the proccess of building this app I learned about HTTP and how to use APIs.`,
-    },
+
     {
         title: "The Conch",
         created: "2020",
@@ -73,14 +82,7 @@ var apps = [{
     stations which sync audio playback and interject livestreamed audio from MUX. It is currently a work in progress. 
     This project has taught me a lot about HTTP authentication, WebRTC, HLS, and WebSockets.`,
     },
-    {
-        title: "Listnr",
-        created: "2018",
-        src: "videos/Listnr Demo.mp4",
-        description: `An app that allows teenagers to share stories. 
-    This was the first app I built and it went through many stages of development. I handled all of the UI, audio playback, and audio recording. 
-    This app taught me a lot about data structures and front-end design. I built it in Xcode with the Firebase Database.`,
-    },
+
     {
         title: "OPUS",
         created: "2019",
