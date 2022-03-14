@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!-- jquery terminal -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
     <!-- index.css -->
     <link rel="stylesheet" href="index.css" />
     <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D80YB6WNY4"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-D80YB6WNY4');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-D80YB6WNY4');
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="container">
-      <div id="terminal">
-        <template id="greetings">
+        <div id="terminal">
+            <template id="greetings">
                        
  ██████╗ ██╗     ██╗██╗   ██╗███████╗██████╗     ███╗   ███╗ ██████╗ ███████╗ ██████╗ ██████╗ ██╗    ██╗
 ██╔═══██╗██║     ██║██║   ██║██╔════╝██╔══██╗    ████╗ ████║██╔═══██╗██╔════╝██╔════╝██╔═══██╗██║    ██║
@@ -41,8 +37,8 @@
  ╚═════╝ ╚══════╝╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝    ╚═╝     ╚═╝ ╚═════╝ ╚══════╝ ╚═════╝ ╚═════╝  ╚══╝╚══╝ 
                                                                                                                                    
       </template>
-      
-      <template id="help">
+
+            <template id="help">
       
       LIST OF COMMANDS: 
       
@@ -51,7 +47,7 @@
       CONTACT: see my contact information
       
       </template>
-      <template id="music">   
+            <template id="music">   
                          
       ___           ___           ___                       ___
      /\  \         /\  \         /\__\                     /\__\    
@@ -77,148 +73,135 @@
   - When you are done type another command to continue.
                                                                                                                           
           </template>
-      
-          <template id="coding"> 
+
+            <template id="coding"> 
             
             
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░▒▒▒▒░░░░░░▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░▒▒▒▒▒▒░░░░░▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░▓▓                         ______    ______   _______   ________ 
-▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▓▓                         /      \  /      \ |       \ |        \
-▓▓░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░░░░░░▓▓                        |  $$$$$$\|  $$$$$$\| $$$$$$$\| $$$$$$$$
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░░░░░░▓▓                        | $$   \$$| $$  | $$| $$  | $$| $$__    
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░▓▓                        | $$      | $$  | $$| $$  | $$| $$  \   
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓                        | $$   __ | $$  | $$| $$  | $$| $$$$$  
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░▒▒▒░░░▓▓                        | $$__/  \| $$__/ $$| $$__/ $$| $$_____ 
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░▓▓                         \$$    $$ \$$    $$| $$    $$| $$     \
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒░░░▓▓                          \$$$$$$   \$$$$$$  \$$$$$$$  \$$$$$$$$
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░▓▓
-▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░▓▓                         ---- About Me
-▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         I started coding freshman year in highschool. I have
-_______▒__________▒▒▒▒▒▒▒▒▒▒▒▒▒▒                                   learned several languages (Python, Java, Swift, JS,
-______▒_______________▒▒▒▒▒▒▒▒                                     HTML, CSS, and SQL) and worked on many projects for myself and
-_____▒________________▒▒▒▒▒▒▒▒                                     friends. Such projects include an app that allows teenagers 
-____▒___________▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                                 to share stories, an invoice-maker for my landscaping company,
-___▒                                                               A ride share app with female drivers and riders, and a radio app. 
-__▒______▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                       Ive also worked on projects for an internship with FEITH SYSTEMS AND
-_▒______▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓                        SERVICES in Upper Dublin PA. Contact for more details.
-▒▒▒▒___▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓
-▒▒▒▒__▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓                          - Below are some projects which highlight my progress and coding skills.
-▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                           - They are in order from oldest to newest in order to show my growth.                       
-▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                           - When you are done type another command to continue. 
-▒▒
-                        
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓      
+▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒░░░▒▒▒▒░░░░░░▓▓                         ______    ______   _______   ________ 
+▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒░▒▒▒▒▒▒░░░░░▓▓                         /      \  /      \ |       \ |        \
+▓▓░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░▓▓                        |  $$$$$$\|  $$$$$$\| $$$$$$$\| $$$$$$$$
+▓▓░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▓▓                        | $$   \$$| $$  | $$| $$  | $$| $$__
+▓▓░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░░░░░░▓▓                        | $$      | $$  | $$| $$  | $$| $$  \ 
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░░░░░░▓▓                        | $$   __ | $$  | $$| $$  | $$| $$$$$    
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░░░░░░▓▓                        | $$__/  \| $$__/ $$| $$__/ $$| $$_____ 
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓▓                         \$$    $$ \$$    $$| $$    $$| $$     \
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░▒▒▒░░░▓▓                          \$$$$$$   \$$$$$$  \$$$$$$$  \$$$$$$$$
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒▒▒░░▓▓                         
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒▒▒░░░▓▓                         ---- About Me 
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒▒░░░░▓▓                         When I was first intruduced to programming in highschool I was immediately hooked.
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒░░░░░▓▓                         Ever since I have worked diligently to perfect my skills. My main focus has been IOS
+▓▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒░░░░░░▓▓                         development, however, I never shy away from a chalenge. I have worked on hundreds of different 
+▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                         projects with 160+ github commits this year alone. From web services to machine learning, no
+_______▒__________▒▒▒▒▒▒▒▒▒▒▒▒▒▒                                   problem is too big or too small. Some highlights are linked below.
+______▒_______________▒▒▒▒▒▒▒▒                                     
+_____▒________________▒▒▒▒▒▒▒▒                                     Github: github.com/OliverMoscow  
+____▒___________▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒                                 
+___▒                                                               Languages: Python, Java, Swift, JS, HTML, CSS, and SQL
+__▒______▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                       
+_▒______▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓                        Job Expirience:
+▒▒▒▒___▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓                         - FEITH SYSTEMS AND SERVICES ( Research and Development )
+▒▒▒▒__▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓▒▓                          - HEI of One ( Primary Developer )
+▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                                  
+▒▒▒__▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                           Type CONTACT for more info
+▒▒                                                                 Type START to go back
+       
                          
       </template>
-      </div>
-      <div id="content"></div>
+        </div>
+        <div id="content"></div>
     </div>
     <!-- MUSIC -->
     <script id="music-template" type="text/x-handlebars-template">
-      <div id="music-layout">
-        <div id="music-items">
-          <div class="container-fluid">
-            <div class="row">
-              {{#each content}}
-                <div class="col-md-3 music-item">{{{this}}}</div>
-              {{/each}}
-              <div class="w-100"></div>
-              {{#with caberet}}
-              <div class="col">
+        <div id="music-layout">
+            <div id="music-items">
                 <div class="container-fluid">
-                  <p style="color: rgb(211, 211, 211); padding: 10px; font-weight: 600;"> Live Performance</p>
-                  <div class="row">
-                    <div class="col" style="max-width: 370px;">
-                      <video height="196.88" width="350" controls>
+                    <div class="row">
+                        {{#each content}}
+                        <div class="col-md-3 music-item">{{{this}}}</div>
+                        {{/each}}
+                        <div class="w-100"></div>
+                        {{#with caberet}}
+                        <div class="col">
+                            <div class="container-fluid">
+                                <p style="color: rgb(211, 211, 211); padding: 10px; font-weight: 600;"> Live Performance</p>
+                                <div class="row">
+                                    <div class="col" style="max-width: 370px;">
+                                        <video height="196.88" width="350" controls>
                         <source src="{{src}}" type="video/mp4">
                       </video>
+                                    </div>
+                                    <div class="col-md">
+                                        <h5 style="color: rgb(158, 158, 158);">{{title}}</h5>
+                                        <p style="color: rgb(158, 158, 158);">{{created}}</p>
+                                        <p style="font-size: 14px; color: rgb(158, 158, 158);">{{description}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {{/with}}
                     </div>
-                    <div class="col-md">
-                      <h5 style="color: rgb(158, 158, 158);">{{title}}</h5>
-                      <p style="color: rgb(158, 158, 158);">{{created}}</p>
-                      <p style="font-size: 14px; color: rgb(158, 158, 158);">{{description}}</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              {{/with}}
             </div>
-          </div>
         </div>
-      </div>
     </script>
 
     <script id="audio-template" type="text/x-handlebars-template">
-      <div class="portfolio-item" id="audio-container" style="height: 400px;">
-        <audio controls>
+        <div class="portfolio-item" id="audio-container" style="height: 400px;">
+            <audio controls>
           <source id="audio-src" src="{{src}}" type="audio/mpeg" />
         </audio>
-        <h5 id="audio-title">{{title}}</h5>
-        <p style="font-size: 12.5px;">{{description}}</p>
-        <h6>Credits:</h6>
-        <div id="audio-details">
-          {{#each credits}}
-            {{#with this}}
-              <div class="audio-item">
-                <span>{{role}}: </span>
-                <span>{{name}}</span>
-              </div>
-            {{/with}}
-          {{/each}}
+            <h5 id="audio-title">{{title}}</h5>
+            <p style="font-size: 12.5px;">{{description}}</p>
+            <h6>Credits:</h6>
+            <div id="audio-details">
+                {{#each credits}} {{#with this}}
+                <div class="audio-item">
+                    <span>{{role}}: </span>
+                    <span>{{name}}</span>
+                </div>
+                {{/with}} {{/each}}
+            </div>
         </div>
-      </div>
     </script>
-    
+
     <!-- CODE -->
     <script id="code-template" type="text/x-handlebars-template">
-      <div id="code-layout">
-        <h5 id="code-header">My Work</h3>
-        <div class="container-fluid">
-          <div class="row">
-            {{#each content}}
-              <div class="col code-project">{{{this}}}</div>
-            {{/each}}
-          </div>
+        <div id="code-layout">
+            <h5 id="code-header">My Work</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        {{#each content}}
+                        <div class="col code-project">{{{this}}}</div>
+                        {{/each}}
+                    </div>
+                </div>
         </div>
-      </div>
     </script>
 
     <script id="project-template" type="text/x-handlebars-template">
-      <div class="portfolio-item container-fluid code-item" id="project-container">
-        <div class="row">
-          <div class="col" style="max-width: fit-content;">
-            <video width="300" height="400" controls>
+        <div class="portfolio-item container-fluid code-item" id="project-container">
+            <div class="row">
+                <div class="col" style="max-width: fit-content;">
+                    <video width="300" height="400" controls>
               <source src="{{src}}" type="video/mp4">
             </video>
-          </div>
-          <div class="col-md">
-            <h5>{{title}}</h5>
-            <p>{{created}}</p>
-            <p style="font-size: 14px;">{{description}}</p>
-          </div>
+                </div>
+                <div class="col-md">
+                    <h5>{{title}}</h5>
+                    <p>{{created}}</p>
+                    <p style="font-size: 14px;">{{description}}</p>
+                </div>
+            </div>
         </div>
-      </div>
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
 </html>
